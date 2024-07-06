@@ -11,7 +11,9 @@ class CharacterModel extends Character {
     required super.birthYear,
     required super.gender,
   });
-   factory CharacterModel.fromJson(Map<String, dynamic> json) {
+
+  // Factory constructor to create an instance from a JSON map
+  factory CharacterModel.fromJson(Map<String, dynamic> json) {
     return CharacterModel(
       name: json['name'],
       height: json['height'],
@@ -22,5 +24,19 @@ class CharacterModel extends Character {
       birthYear: json['birth_year'],
       gender: json['gender'],
     );
+  }
+
+  // Method to convert an instance to a JSON map
+  Map<String, dynamic> toJson() {
+    return {
+      'name': name,
+      'height': height,
+      'mass': mass,
+      'hair_color': hairColor,
+      'skin_color': skinColor,
+      'eye_color': eyeColor,
+      'birth_year': birthYear,
+      'gender': gender,
+    };
   }
 }

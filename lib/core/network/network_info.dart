@@ -4,9 +4,9 @@ abstract class BaseNetWorkInfo {
   Future<bool> get isConnected;
 }
 
-class NetWorkInfo implements BaseNetWorkInfo {
+class NetWorkInfoImpl implements BaseNetWorkInfo {
   final InternetConnectionChecker internetConnectionChecker;
-  NetWorkInfo({
+  NetWorkInfoImpl({
     required this.internetConnectionChecker,
   });
   @override

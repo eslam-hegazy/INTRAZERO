@@ -10,7 +10,7 @@ import 'package:tappyfi/features/home/domain/reposatory/character_reposatory.dar
 class CharacterReposatoryImpl extends CharacterReposatory {
   final CharacterLocalDataSource characterLocalDataSource;
   final CharacterRemoteDataSource characterRemoteDataSource;
-  final NetWorkInfo netWorkInfo;
+  final NetWorkInfoImpl netWorkInfo;
 
   CharacterReposatoryImpl({
     required this.characterLocalDataSource,
